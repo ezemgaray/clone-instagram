@@ -1,2 +1,85 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?fhwxef");
+  src: url("fonts/icomoon.eot?fhwxef#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?fhwxef") format("truetype"), url("fonts/icomoon.woff?fhwxef") format("woff"), url("fonts/icomoon.svg?fhwxef#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "";
+}
+
+.icon-send:before {
+  content: "";
+}
+
+.icon-dots-h:before {
+  content: "";
+}
+
+.icon-message:before {
+  content: "";
+}
+
+.icon-search:before {
+  content: "";
+}
+
+.icon-user:before {
+  content: "";
+}
+
+.icon-bookmark-o:before {
+  content: "";
+}
+
+.icon-heart-o:before {
+  content: "";
+}
+
+.icon-heart:before {
+  content: "";
+}
+
+.icon-compass2:before {
+  content: "";
+}
+
+.icon-facebook:before {
+  content: "";
+}
+
+.icon-instagram:before {
+  content: "";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #fafafa;
+}
+
+main, header, footer, nav {
+  display: block;
+}
 
 /*# sourceMappingURL=style.css.map */
