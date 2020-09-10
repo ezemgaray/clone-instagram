@@ -27,9 +27,8 @@ The **Sass** files are organizated of the following way
 Due to their similarity, inheritance has been applied to input styles.
 
 *SASS*
-```
 **src/css/sass/reset.sass**
-
+```
 %input
    background-color: $bg
    outline: none
@@ -55,10 +54,8 @@ input[type="submit"]
 
 *CSS RESULT*
 
-```
-*SASS*
 **src/css/style.css**
-
+```
 input[type=submit], input[type=text], input[type=password], input[type=search] {
   background-color: #fafafa;
   outline: none;
