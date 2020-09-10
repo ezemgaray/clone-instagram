@@ -6,6 +6,7 @@ The practice consists of two pages. A login and a summary of the instagram feed,
 ## Content of this practice
    - [Import](#sass-organization)
    - [Inheritance](#inheritance)
+   - [Carousel Animation](#carousel-animation)
 
 
 
@@ -27,6 +28,7 @@ The **Sass** files are organizated of the following way
 Due to their similarity, inheritance has been applied to input styles.
 
 *SASS*
+
 **src/css/sass/reset.sass**
 ```
 %input
@@ -79,4 +81,41 @@ input[type=submit] {
   cursor: pointer;
 }
 
+```
+
+
+### Carousel Animation
+
+To perform the carousel on the login page I combined different rules within a @mixin
+
+**@mixin:** As a function, @mixin contains the code that can be reused.
+**@at-root:** Allow to encapsulate code for organization in Sass but jumps to top level at compile time
+**@for:** Loop to generate code at compile time, following the specified rules
+**@if:** Condition. 
+
+```
+$n: 5
+$x: 17.5%
+$y: (100% - $n * $x) / ($n - 1)
+
+@mixin carousel-animation($frames, $interval, $name: 'carousel')
+   $animating: (100% - $frames * $interval) / ($frames - 1)
+
+   @at-root 
+      @keyframes carousel 
+         @for $i from 0 to $n
+            $current: ($i * $x) + ($i * $y)
+            $next: (($i + 1) * $x) + ($i + $y)
+
+            #{$current, $next}
+               background: url('../img/phone_' + ($i + 1) + '.jpg')
+               opacity: 1
+            $midle: $i * ($x / 2%) + ($i - 1) * $y + ($y / 2)
+
+            @if $i > 0
+               #{$midle}
+                  opacity: 1
+
+// IMPLEMENTATION
+@include carousel-animation($frames: 5, $interval: 20%)
 ```
