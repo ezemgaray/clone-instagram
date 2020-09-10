@@ -119,3 +119,7 @@ $y: (100% - $n * $x) / ($n - 1)
 // IMPLEMENTATION
 @include carousel-animation($frames: 5, $interval: 20%)
 ```
+
+## Authors
+
+*  **Ezequiel Garay** - [Github](https://github.com/ezemgaray "Ezequiel Garay - GitHub")
