@@ -1,0 +1,90 @@
+
+// CAROUSEL ANIMATION
+$n: 5
+$x: 17.5%
+$y: (100% - $n * $x) / ($n - 1)
+
+@mixin carousel-animation($frames, $interval, $name: 'carousel')
+   $animating: (100% - $frames * $interval) / ($frames - 1)
+
+   @at-root 
+      @keyframes carousel 
+         @for $i from 0 to $n
+            $current: ($i * $x) + ($i * $y)
+            $next: (($i + 1) * $x) + ($i + $y)
+
+            #{$current, $next}
+               background: url('../img/phone_' + ($i + 1) + '.jpg')
+               opacity: 1
+            $midle: $i * ($x / 2%) + ($i - 1) * $y + ($y / 2)
+
+            @if $i > 0
+               #{$midle}
+                  opacity: 1
+
+.login
+   margin: 20px auto
+   @media all and ( min-width: 450px )
+      margin: 95px auto
+   .phone-image
+      position: relative
+      background: url('../img/phone.png')
+      background-repeat: no-repeat
+      background-size: 454px 618px
+      background-position: center
+      flex-basis: 454px
+      margin-left: -35px
+      margin-right: -15px
+      width: 100%
+      height: 618px
+      @media all and ( max-width: 875px )
+         display: none
+      .carousel
+         display: block
+         position: absolute
+         top: 99px
+         right: 63px
+         z-index: 1
+         width: 240px
+         height: 427px
+         background: url('../img/phone_1.jpg')
+         animation: carousel 25s linear infinite
+         @include carousel-animation($frames: 5, $interval: 20%)
+   .right-side
+      width: 350px
+      margin-top: 10px
+      .card
+         max-width: 350px
+         margin-bottom: 10px
+         &:nth-child(1)
+            margin-top: 20px
+         &:nth-child(1)
+            .card-header
+               margin: 30px auto 40px
+               background: url('../img/640px-instagram_logo.svg.png')
+               background-repeat: no-repeat
+               background-size: 100%
+               background-position: 0 -10px
+               height: 51px
+               width: 185px
+         .card-footer
+            p
+               margin: 20px 0
+               &:not(.text-small)
+                  font-weight: bold
+         &:nth-child(2)
+            padding: 10px 0
+            margin-bottom: 10px
+            p
+               padding: 10px
+               a
+                  font-weight: 600
+                  color: rgba($blue, .7)
+      .store
+         p
+            margin: 10px 0
+         img
+            width: 45%
+
+
+
