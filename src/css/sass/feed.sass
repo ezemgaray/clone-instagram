@@ -1,0 +1,77 @@
+.nav__container
+   .nav
+      padding: 10px 0 5px
+      margin: 0 auto
+      max-width: 975px
+      .logo
+         img
+            width: 103px
+      .menu
+         ul
+            height: 100%
+            display: flex
+            flex-direction: row
+            align-items: center
+            li
+               margin-left: 20px
+               [class*="icon-"]
+                  display: inline-block
+                  font-size: 22px
+                  line-height: 22px
+                  color: #000
+
+.icon-avatar
+   width: 22px
+   height: 22px
+   margin-top: 3px
+   border-radius: 50%
+   background-color: red
+   background: url('../img/ig-ico.png')
+   background-size: cover
+
+.user
+   height: 100%
+   font-weight: 600
+   color: $gray
+   a
+      display: inline-block
+      color: $gray
+      line-height: 100%
+      vertical-align: middle
+
+.post
+   margin: 0 auto 10px
+   max-width: 600px
+   height: 100%
+   [class*="icon-"]:not(.icon-dots-h)
+      display: inline-block
+      font-size: 24px
+      line-height: 24px
+      width: 24px
+      height: 24px
+   .card-header
+      height: 45px
+      padding: 10px
+   .post-body
+      width: 100%
+      img
+         width: 100%
+   .post-footer
+      width: 100%
+      padding: 10px
+      .post__like-comment
+         span
+            margin-right: 5px
+      .post__likes
+         margin: 5px 0
+         font-weight: 600
+      .post__desc-comm
+         width: 100%
+         padding-left: 10px
+         // .post-description
+
+.liked
+   color: $red
+
+
+
