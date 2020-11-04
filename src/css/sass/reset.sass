@@ -1,48 +1,52 @@
 *
-   box-sizing: border-box
-   margin: 0
-   padding: 0
+  box-sizing: border-box
+  margin: 0
+  padding: 0
 
 body
-   font-family: $family
-   background-color: $bg
-   font-size: 14px
+  font-family: $family
+  background-color: $bg
+  font-size: 14px
 
 main, header, footer, nav
-   display: block
+  display: block
 
 main, footer
-   margin: 0 auto
-   width: 100%
-   max-width: 1024px
-
+  margin: 0 auto
+  width: 100%
+  max-width: 1024px
 
 a, a:hover, a:link, a:active, a:visited
-   color: $blue-middle
-   text-decoration: none
+  color: $blue-middle
+  text-decoration: none
 
 %input
-   background-color: $bg
-   outline: none
-   width: 100%
-   border-radius: 3px
-   padding: 8px 5px
-   line-height: 18px
+  background-color: $bg
+  outline: none
+  width: 100%
+  border-radius: 3px
+  padding: 8px 5px
+  line-height: 18px
 
 input[type="text"], input[type="password"], input[type="search"]
-   @extend %input
-   border: solid 1px rgba($gray-light, .3)
-   font-size: 16px
+  @extend %input
+  border: solid 1px rgba($gray-light, .3)
+  font-size: 16px
+
+input[type="search"]
+  width: 200px
 
 input[type="submit"]
-   @extend %input
-   margin: 10px 0
-   border: none
-   background-color: $blue-light
-   color: $white
-   font-weight: bold
-   cursor: pointer
+  @extend %input
+  margin: 10px 0
+  border: none
+  background-color: $blue
+  color: $white
+  font-weight: bold
+  cursor: pointer
+  &:disabled
+    background-color: $blue-light
 
 ul, li
-   list-style: none
-   display: inline-block
+  list-style: none
+  display: inline-block

@@ -2,326 +2,339 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="shortcut icon" href="src/img/ig-ico.png" type="image/x-icon">
-   <title>Instagram - Feed</title>
-   <link rel="stylesheet" href="src/css/style.css">
-   <script src="src/js/main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="src/img/ig-ico.png" type="image/x-icon">
+  <title>Instagram - Feed</title>
+  <link rel="stylesheet" href="src/css/style.css">
+  <script src="src/js/main.js"></script>
 </head>
 
 <body>
-   <nav>
-      <div class="nav__container card">
-         <div class="nav flex-row flex-between">
+  <nav>
+    <div class="nav__container card">
+      <div class="nav flex-row flex-between">
 
-            <div class="logo">
-               <img src="src/img/640px-Instagram_logo.svg.png" alt="Instagram logo">
+        <div class="logo">
+          <img src="src/img/640px-Instagram_logo.svg.png" alt="Instagram logo">
+        </div>
+        <div class="search">
+          <form action="">
+            <div class="input__container">
+              <label for="search">
+                <span class="icon-search disabled text-small"> Search</span>
+              </label>
+              <input type="search" name="search" id="search">
             </div>
-            <div class="search">
-               <form action="">
-                  <div class="input__container">
-                     <label for="search"><span class="icon-search disabled text-small"> Search</span>
-                        <input type="search" name="search" id="search">
-                     </label>
-                  </div>
-               </form>
-            </div>
-            <div class="menu">
-               <ul>
-                  <li><a href=""><span class="icon-home-fill"></span></a></li>
-                  <li><a href=""><span class="icon-send"></span></a></li>
-                  <li><a href=""><span class="icon-compass2"></span></a></li>
-                  <li><a href=""><span class="icon-heart-o"></span></a></li>
-                  <li><a href=""><span class="icon-avatar"></span></a></li>
-               </ul>
-            </div>
-         </div>
+          </form>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href=""><span class="icon-home-fill"></span></a></li>
+            <li><a href=""><span class="icon-send"></span></a></li>
+            <li><a href=""><span class="icon-compass2"></span></a></li>
+            <li><a href=""><span class="icon-heart-o"></span></a></li>
+            <li><a href=""><span class="icon-avatar"></span></a></li>
+          </ul>
+        </div>
       </div>
-   </nav>
-   <main>
-      <div class="main__container">
+    </div>
+  </nav>
+  <main>
+    <div class="main__container">
 
-         <!-- POST -->
-         <div class="post card">
-            <div class="card-header">
-               <div class="flex-row flex-between">
-                  <div class="user">
-                        <a href="#"><span class="icon-avatar"></span></a>
-                        <a href="#" class="username">username</a>
-                  </div>
-                  <div>
-                     <a href="#"><span class="icon-dots-h"></span></a>
-                  </div>
-               </div>
+      <!-- POST -->
+      <div class="post card">
+        <div class="card-header">
+          <div class="flex-row flex-between">
+            <div class="user">
+              <a href="#"><span class="icon-avatar"></span></a>
+              <a href="#" class="username">username</a>
             </div>
-            <div class="card-body">
-               <div class="post-body">
-                  <img src="src/img/post-1.jpg">
-               </div>
+            <div>
+              <a href="#"><span class="icon-dots-h"></span></a>
             </div>
-            <div class="card-footer">
-               <div class="post-footer">
-                  <div class="flex-row flex-between">
-                     <div class="post__like-comment">
-                        <span class="icon-heart-o"></span>
-                        <span class="icon-message"></span>
-                     </div>
-                     <div class="post__save">
-                        <span class="icon-bookmark-o"></span>
-                     </div>
-                  </div>
-                  <div class="post__likes">
-                     <p><span class="post__likes-count">15</span> likes</p>
-                  </div>
-                  <div class="post__desc-comm">
-                     <div class="post-descripton">
-                        <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> 📸📸📸Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quae quisquam facilis quis! Rerum, corporis?</p>
-                     </div>
-                     <div class="post-descripton">
-                        <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> Lorem, ipsum dolor.🦾🦾</p>
-                     </div>
-                     <div class="post-date">
-                        <p class="text-small disabled">1 min ago</p>
-                     </div>
-                  </div>
-               </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="post-body">
+            <img src="src/img/post-1.jpg">
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="post-footer">
+            <div class="flex-row flex-between">
+              <div class="post__like-comment">
+                <span class="icon-heart-o"></span>
+                <span class="icon-message"></span>
+              </div>
+              <div class="post__save">
+                <span class="icon-bookmark-o"></span>
+              </div>
             </div>
-         </div>
-         <!-- POST -->
-         <div class="post card">
-            <div class="card-header">
-               <div class="flex-row flex-between">
-                  <div class="user">
-                        <a href="#"><span class="icon-avatar"></span></a>
-                        <a href="#" class="username">username</a>
-                  </div>
-                  <div>
-                     <a href="#"><span class="icon-dots-h"></span></a>
-                  </div>
-               </div>
+            <div class="post__likes">
+              <p><span class="post__likes-count">15</span> likes</p>
             </div>
-            <div class="card-body">
-               <div class="post-body">
-                  <img src="src/img/post-2.jpg">
-               </div>
+            <div class="post__desc-comm">
+              <div class="post-descripton">
+                <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> 📸📸📸Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit. Debitis quae quisquam facilis quis! Rerum, corporis?</p>
+              </div>
+              <div class="post-descripton">
+                <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> Lorem, ipsum dolor.🦾🦾
+                </p>
+              </div>
+              <div class="post-date">
+                <p class="text-small disabled">1 min ago</p>
+              </div>
             </div>
-            <div class="card-footer">
-               <div class="post-footer">
-                  <div class="flex-row flex-between">
-                     <div class="post__like-comment">
-                        <span class="icon-heart liked"></span>
-                        <span class="icon-message"></span>
-                     </div>
-                     <div class="post__save">
-                        <span class="icon-bookmark-o"></span>
-                     </div>
-                  </div>
-                  <div class="post__likes">
-                     <p><span class="post__likes-count">15</span> likes</p>
-                  </div>
-                  <div class="post__desc-comm">
-                     <div class="post-descripton">
-                        <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> 📸📸📸Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quae quisquam facilis quis! Rerum, corporis?</p>
-                     </div>
-                     <div class="post-descripton">
-                        <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> Lorem, ipsum dolor.🦾🦾</p>
-                     </div>
-                     <div class="post-date">
-                        <p class="text-small disabled">1 min ago</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- POST -->
-         <div class="post card">
-            <div class="card-header">
-               <div class="flex-row flex-between">
-                  <div class="user">
-                        <a href="#"><span class="icon-avatar"></span></a>
-                        <a href="#" class="username">username</a>
-                  </div>
-                  <div>
-                     <a href="#"><span class="icon-dots-h"></span></a>
-                  </div>
-               </div>
-            </div>
-            <div class="card-body">
-               <div class="post-body">
-                  <img src="src/img/post-3.jpg">
-               </div>
-            </div>
-            <div class="card-footer">
-               <div class="post-footer">
-                  <div class="flex-row flex-between">
-                     <div class="post__like-comment">
-                        <span class="icon-heart-o"></span>
-                        <span class="icon-message"></span>
-                     </div>
-                     <div class="post__save">
-                        <span class="icon-bookmark-o"></span>
-                     </div>
-                  </div>
-                  <div class="post__likes">
-                     <p><span class="post__likes-count">15</span> likes</p>
-                  </div>
-                  <div class="post__desc-comm">
-                     <div class="post-descripton">
-                        <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> 📸📸📸Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quae quisquam facilis quis! Rerum, corporis?</p>
-                     </div>
-                     <div class="post-descripton">
-                        <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> Lorem, ipsum dolor.🦾🦾</p>
-                     </div>
-                     <div class="post-date">
-                        <p class="text-small disabled">1 min ago</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- POST -->
-         <div class="post card">
-            <div class="card-header">
-               <div class="flex-row flex-between">
-                  <div class="user">
-                        <a href="#"><span class="icon-avatar"></span></a>
-                        <a href="#" class="username">username</a>
-                  </div>
-                  <div>
-                     <a href="#"><span class="icon-dots-h"></span></a>
-                  </div>
-               </div>
-            </div>
-            <div class="card-body">
-               <div class="post-body">
-                  <img src="src/img/post-4.jpg">
-               </div>
-            </div>
-            <div class="card-footer">
-               <div class="post-footer">
-                  <div class="flex-row flex-between">
-                     <div class="post__like-comment">
-                        <span class="icon-heart liked"></span>
-                        <span class="icon-message"></span>
-                     </div>
-                     <div class="post__save">
-                        <span class="icon-bookmark-o"></span>
-                     </div>
-                  </div>
-                  <div class="post__likes">
-                     <p><span class="post__likes-count">15</span> likes</p>
-                  </div>
-                  <div class="post__desc-comm">
-                     <div class="post-descripton">
-                        <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> 📸📸📸Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quae quisquam facilis quis! Rerum, corporis?</p>
-                     </div>
-                     <div class="post-descripton">
-                        <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> Lorem, ipsum dolor.🦾🦾</p>
-                     </div>
-                     <div class="post-date">
-                        <p class="text-small disabled">1 min ago</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- POST -->
-         <div class="post card">
-            <div class="card-header">
-               <div class="flex-row flex-between">
-                  <div class="user">
-                        <a href="#"><span class="icon-avatar"></span></a>
-                        <a href="#" class="username">username</a>
-                  </div>
-                  <div>
-                     <a href="#"><span class="icon-dots-h"></span></a>
-                  </div>
-               </div>
-            </div>
-            <div class="card-body">
-               <div class="post-body">
-                  <img src="src/img/post-5.jpg">
-               </div>
-            </div>
-            <div class="card-footer">
-               <div class="post-footer">
-                  <div class="flex-row flex-between">
-                     <div class="post__like-comment">
-                        <span class="icon-heart-o"></span>
-                        <span class="icon-message"></span>
-                     </div>
-                     <div class="post__save">
-                        <span class="icon-bookmark-o"></span>
-                     </div>
-                  </div>
-                  <div class="post__likes">
-                     <p><span class="post__likes-count">15</span> likes</p>
-                  </div>
-                  <div class="post__desc-comm">
-                     <div class="post-descripton">
-                        <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> 📸📸📸Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quae quisquam facilis quis! Rerum, corporis?</p>
-                     </div>
-                     <div class="post-descripton">
-                        <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> Lorem, ipsum dolor.🦾🦾</p>
-                     </div>
-                     <div class="post-date">
-                        <p class="text-small disabled">1 min ago</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- POST -->
-         <div class="post card">
-            <div class="card-header">
-               <div class="flex-row flex-between">
-                  <div class="user">
-                        <a href="#"><span class="icon-avatar"></span></a>
-                        <a href="#" class="username">username</a>
-                  </div>
-                  <div>
-                     <a href="#"><span class="icon-dots-h"></span></a>
-                  </div>
-               </div>
-            </div>
-            <div class="card-body">
-               <div class="post-body">
-                  <img src="src/img/post-6.jpg">
-               </div>
-            </div>
-            <div class="card-footer">
-               <div class="post-footer">
-                  <div class="flex-row flex-between">
-                     <div class="post__like-comment">
-                        <span class="icon-heart-o"></span>
-                        <span class="icon-message"></span>
-                     </div>
-                     <div class="post__save">
-                        <span class="icon-bookmark-o"></span>
-                     </div>
-                  </div>
-                  <div class="post__likes">
-                     <p><span class="post__likes-count">15</span> likes</p>
-                  </div>
-                  <div class="post__desc-comm">
-                     <div class="post-descripton">
-                        <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> 📸📸📸Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quae quisquam facilis quis! Rerum, corporis?</p>
-                     </div>
-                     <div class="post-descripton">
-                        <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> Lorem, ipsum dolor.🦾🦾</p>
-                     </div>
-                     <div class="post-date">
-                        <p class="text-small disabled">1 min ago</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-
+          </div>
+        </div>
       </div>
-   </main>
+      <!-- POST -->
+      <div class="post card">
+        <div class="card-header">
+          <div class="flex-row flex-between">
+            <div class="user">
+              <a href="#"><span class="icon-avatar"></span></a>
+              <a href="#" class="username">username</a>
+            </div>
+            <div>
+              <a href="#"><span class="icon-dots-h"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="post-body">
+            <img src="src/img/post-2.jpg">
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="post-footer">
+            <div class="flex-row flex-between">
+              <div class="post__like-comment">
+                <span class="icon-heart liked"></span>
+                <span class="icon-message"></span>
+              </div>
+              <div class="post__save">
+                <span class="icon-bookmark-o"></span>
+              </div>
+            </div>
+            <div class="post__likes">
+              <p><span class="post__likes-count">15</span> likes</p>
+            </div>
+            <div class="post__desc-comm">
+              <div class="post-descripton">
+                <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> 📸📸📸Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit. Debitis quae quisquam facilis quis! Rerum, corporis?</p>
+              </div>
+              <div class="post-descripton">
+                <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> Lorem, ipsum dolor.🦾🦾
+                </p>
+              </div>
+              <div class="post-date">
+                <p class="text-small disabled">1 min ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- POST -->
+      <div class="post card">
+        <div class="card-header">
+          <div class="flex-row flex-between">
+            <div class="user">
+              <a href="#"><span class="icon-avatar"></span></a>
+              <a href="#" class="username">username</a>
+            </div>
+            <div>
+              <a href="#"><span class="icon-dots-h"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="post-body">
+            <img src="src/img/post-3.jpg">
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="post-footer">
+            <div class="flex-row flex-between">
+              <div class="post__like-comment">
+                <span class="icon-heart-o"></span>
+                <span class="icon-message"></span>
+              </div>
+              <div class="post__save">
+                <span class="icon-bookmark-o"></span>
+              </div>
+            </div>
+            <div class="post__likes">
+              <p><span class="post__likes-count">15</span> likes</p>
+            </div>
+            <div class="post__desc-comm">
+              <div class="post-descripton">
+                <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> 📸📸📸Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit. Debitis quae quisquam facilis quis! Rerum, corporis?</p>
+              </div>
+              <div class="post-descripton">
+                <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> Lorem, ipsum dolor.🦾🦾
+                </p>
+              </div>
+              <div class="post-date">
+                <p class="text-small disabled">1 min ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- POST -->
+      <div class="post card">
+        <div class="card-header">
+          <div class="flex-row flex-between">
+            <div class="user">
+              <a href="#"><span class="icon-avatar"></span></a>
+              <a href="#" class="username">username</a>
+            </div>
+            <div>
+              <a href="#"><span class="icon-dots-h"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="post-body">
+            <img src="src/img/post-4.jpg">
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="post-footer">
+            <div class="flex-row flex-between">
+              <div class="post__like-comment">
+                <span class="icon-heart liked"></span>
+                <span class="icon-message"></span>
+              </div>
+              <div class="post__save">
+                <span class="icon-bookmark-o"></span>
+              </div>
+            </div>
+            <div class="post__likes">
+              <p><span class="post__likes-count">15</span> likes</p>
+            </div>
+            <div class="post__desc-comm">
+              <div class="post-descripton">
+                <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> 📸📸📸Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit. Debitis quae quisquam facilis quis! Rerum, corporis?</p>
+              </div>
+              <div class="post-descripton">
+                <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> Lorem, ipsum dolor.🦾🦾
+                </p>
+              </div>
+              <div class="post-date">
+                <p class="text-small disabled">1 min ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- POST -->
+      <div class="post card">
+        <div class="card-header">
+          <div class="flex-row flex-between">
+            <div class="user">
+              <a href="#"><span class="icon-avatar"></span></a>
+              <a href="#" class="username">username</a>
+            </div>
+            <div>
+              <a href="#"><span class="icon-dots-h"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="post-body">
+            <img src="src/img/post-5.jpg">
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="post-footer">
+            <div class="flex-row flex-between">
+              <div class="post__like-comment">
+                <span class="icon-heart-o"></span>
+                <span class="icon-message"></span>
+              </div>
+              <div class="post__save">
+                <span class="icon-bookmark-o"></span>
+              </div>
+            </div>
+            <div class="post__likes">
+              <p><span class="post__likes-count">15</span> likes</p>
+            </div>
+            <div class="post__desc-comm">
+              <div class="post-descripton">
+                <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> 📸📸📸Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit. Debitis quae quisquam facilis quis! Rerum, corporis?</p>
+              </div>
+              <div class="post-descripton">
+                <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> Lorem, ipsum dolor.🦾🦾
+                </p>
+              </div>
+              <div class="post-date">
+                <p class="text-small disabled">1 min ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- POST -->
+      <div class="post card">
+        <div class="card-header">
+          <div class="flex-row flex-between">
+            <div class="user">
+              <a href="#"><span class="icon-avatar"></span></a>
+              <a href="#" class="username">username</a>
+            </div>
+            <div>
+              <a href="#"><span class="icon-dots-h"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="post-body">
+            <img src="src/img/post-6.jpg">
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="post-footer">
+            <div class="flex-row flex-between">
+              <div class="post__like-comment">
+                <span class="icon-heart-o"></span>
+                <span class="icon-message"></span>
+              </div>
+              <div class="post__save">
+                <span class="icon-bookmark-o"></span>
+              </div>
+            </div>
+            <div class="post__likes">
+              <p><span class="post__likes-count">15</span> likes</p>
+            </div>
+            <div class="post__desc-comm">
+              <div class="post-descripton">
+                <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> 📸📸📸Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit. Debitis quae quisquam facilis quis! Rerum, corporis?</p>
+              </div>
+              <div class="post-descripton">
+                <p class="line-clamp disabled"><a href=""><span class="user">username</span></a> Lorem, ipsum dolor.🦾🦾
+                </p>
+              </div>
+              <div class="post-date">
+                <p class="text-small disabled">1 min ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </main>
 </body>
 
 </html>
