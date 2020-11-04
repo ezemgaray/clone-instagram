@@ -8,8 +8,8 @@ The practice consists of two pages. A login and a summary of the instagram feed,
    - [Inheritance](#inheritance)
    - [Carousel Animation](#carousel-animation)
 
-![Original]('/src/img/original.png')
-![Clone]('/src/img/clone.png')
+![Original](src/img/original.png)
+![Clone](src/img/clone.png)
 
 ### Sass Organization
 The **Sass** files are organizated of the following way
