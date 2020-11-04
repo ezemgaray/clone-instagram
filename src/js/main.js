@@ -1,34 +1,39 @@
-window.onload = function(){
+window.onload = function () {
+  let user, pass, login = elem('#login-btn') || null
 
-   elem('#user').oninput = function(){
-      
-      elem('[for="user"] span').classList.add('up')
-      
-      if(this.value == ""){
-         elem('[for="user"] span').classList.remove('up')
-      }
+  if (user = elem('#user')) {
+    login.setAttribute("disabled", "")
 
-      if((elem('#password')).value.trim().length >= 6 && this.value.trim()){
-         elem('#login-btn').style.backgroundColor = 'rgb(0,149,246)'
-      }else
-         elem('#login-btn').style = ''
-   }
-   elem('#password').oninput = function(){
-      
-      elem('[for="password"] span').classList.add('up')
+    user.oninput = function () {
+      labelAnimation(this)
+      pass.value.trim().length >= 6 && this.value
+        ? login.removeAttribute("disabled")
+        : login.setAttribute("disabled", "")
+    }
+  }
 
-      if((elem('#user')).value.trim() &&this.value.length >= 6){
-         elem('#login-btn').style.backgroundColor = 'rgb(0,149,246)'
-      }else
-         elem('#login-btn').style = ''
+  if (pass = elem('#password')) {
+    pass.oninput = function () {
+      labelAnimation(this)
+      user.value.trim() && this.value.length >= 6
+        ? login.removeAttribute("disabled")
+        : login.setAttribute("disabled", "")
+    }
+  }
 
-      if(this.value == ""){
-         elem('[for="password"] span').classList.remove('up')
-      }
-   }
-
+  if (elem('#search')) {
+    elem('#search').oninput = function () {
+      labelAnimation(this)
+    }
+  }
 }
 
-function elem(elem){
-   return document.querySelector(elem)
+function elem(elem) {
+  return document.querySelector(elem)
+}
+
+function labelAnimation(input) {
+  input.value 
+    ? input.parentElement.classList.add('up')
+    : input.parentElement.classList.remove('up')
 }
